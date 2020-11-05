@@ -1,0 +1,19 @@
+{
+  "name": "clinicasql",
+  "version": "1.0.0",
+  "description": "Program that simulates client requests to a dental clinic.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielpartida11/clinicaSql.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielpartida11/clinicaSql/issues"
+  },
+  "homepage": "https://github.com/danielpartida11/clinicaSql#readme"
+}
