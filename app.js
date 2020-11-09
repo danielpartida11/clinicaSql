@@ -29,5 +29,7 @@ app.use(function(req, res, next) { //para evitar el error CORS
     // res.header("Access-Control-Allow-Methods", "GET, POST");
     next();
 });
-
+//-------------------------------------------LISTENER--------------------------------------------------
 app.listen(3000, () => console.log('Servidor Levantado en el Puerto 3000'));
+//----------------------------------------LISTENER-----------------------------------------------------
+
