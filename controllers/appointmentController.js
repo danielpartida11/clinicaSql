@@ -33,7 +33,7 @@ module.exports.deleteAppointment = async (req, res) => {
 
     const {id} = req.params;
     const appointment = await Appointment.findById(id);
-    await Appointment.deleteOne(movie);
+    await Appointment.deleteOne(appointment);
     res.json('Sala cerrada');
 
 };
