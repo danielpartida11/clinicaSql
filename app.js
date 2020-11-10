@@ -21,6 +21,12 @@ const connect = mysql.createConnection({
 })
 //-----------------------------------------CONEXION CON LA BBDD-------------------------------------------------
 
+//-----------------------------------------MIDDLEWARES----------------------------------------------------------
+app.use(express.json());
+app.use('/', clinicRouter);
+app.use('/', clientRouter);
+app.use('/', appointmentRouter);
+//-----------------------------------------MIDDLEWARES----------------------------------------------------------
 app.use(express.json());
 
 app.use(function(req, res, next) { //para evitar el error CORS
