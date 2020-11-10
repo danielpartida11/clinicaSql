@@ -1,7 +1,7 @@
 //------------------------------------------REQUIRES------------------------------------------------------------
 
 const router = require('express').Router();
-const controller = require('./servicesMovie');
+const controller = require('./clinicController');
 module.exports = router;
 
 //-------------------------------------------REQUIRES-----------------------------------------------------------
