@@ -8,7 +8,7 @@ module.exports.client = async(req, res) =>{
 //-------------------------------------------------------GET----------------------------------------------------
 
 //----------------------------------------------POST------------------------------------------------------------
-module.exports.createappointment = async(req, res) =>{
+module.exports.createClient = async(req, res) =>{
 
     const client = new Client(req.body);
     await client.save();

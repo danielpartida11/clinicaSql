@@ -8,7 +8,7 @@ module.exports.clinic = async(req, res) =>{
 //-------------------------------------------------------GET----------------------------------------------------
 
 //----------------------------------------------POST------------------------------------------------------------
-module.exports.createclinic = async(req, res) =>{
+module.exports.createClinic = async(req, res) =>{
 
     const clinic = new Clinic(req.body);
     await clinic.save();
