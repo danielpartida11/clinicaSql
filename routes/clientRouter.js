@@ -7,11 +7,11 @@ module.exports = router;
 //-------------------------------------------REQUIRES-----------------------------------------------------------
 
 //-------------------------------------------CONTROLLERS--------------------------------------------------------
-router.get('/client', controller.getclient);
+router.get('/client', controller.getClient);
 
-router.post('/client', controller.createclient);
+router.post('/client', controller.createClient);
 
-router.put('/client', controller.updateclient);
+router.put('/client', controller.updateClient);
 
-router.delete('/client/:id', controller.deleteclient);
+router.delete('/client/:id', controller.deleteClient);
 //-------------------------------------------CONTROLLERS--------------------------------------------------------

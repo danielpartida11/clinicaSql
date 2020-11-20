@@ -7,11 +7,11 @@ module.exports = router;
 //-------------------------------------------REQUIRES-----------------------------------------------------------
 
 //-------------------------------------------CONTROLLERS--------------------------------------------------------
-router.get('/appointment', controller.getappointment);
+router.get('/appointment', controller.getAppointment);
 
-router.post('/appointment', controller.createappointment);
+router.post('/appointment', controller.createAppointment);
 
-router.put('/appointment', controller.updateappointment);
+router.put('/appointment', controller.updateAppointment);
 
-router.delete('/appointment/:id', controller.deleteappointment);
+router.delete('/appointment/:id', controller.deleteAppointment);
 //-------------------------------------------CONTROLLERS--------------------------------------------------------

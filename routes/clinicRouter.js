@@ -7,11 +7,11 @@ module.exports = router;
 //-------------------------------------------REQUIRES-----------------------------------------------------------
 
 //-------------------------------------------CONTROLLERS--------------------------------------------------------
-router.get('/clinic', controller.getclinic);
+router.get('/clinic', controller.getClinic);
 
-router.post('/clinic', controller.createclinic);
+router.post('/clinic', controller.createClinic);
 
-router.put('/clinic', controller.updateclinic);
+router.put('/clinic', controller.updateClinic);
 
-router.delete('/clinic/:id', controller.deleteclinic);
+router.delete('/clinic/:id', controller.deleteClinic);
 //-------------------------------------------CONTROLLERS--------------------------------------------------------
