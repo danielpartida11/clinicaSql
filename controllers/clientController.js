@@ -1,5 +1,5 @@
 //-----------------------------------------GET------------------------------------------------------------------
-module.exports.client = async(req, res) =>{
+module.exports.getClient = async(req, res) =>{
 
     const clients = await client.find();
     res.json(clients);
