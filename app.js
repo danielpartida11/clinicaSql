@@ -8,7 +8,7 @@ const mysql = require ('mysql2/promise');
 //--------------------------------------------PORT--------------------------------------------------------------
 const app = express();
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3003;
 //----------------------------------------------------PORT------------------------------------------------------
 
 //--------------------------------------CONEXION CON LA BBDD----------------------------------------------------
@@ -29,6 +29,6 @@ app.use(function(req, res, next) { //para evitar el error CORS
     next();
 });
 //-------------------------------------------LISTENER--------------------------------------------------
-app.listen(3000, () => console.log('Servidor Levantado en el Puerto 3000'));
+app.listen(PORT, () => console.log(`Servidor Levantado en el Puerto ${PORT}`));
 //----------------------------------------LISTENER-----------------------------------------------------
 
