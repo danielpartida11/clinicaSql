@@ -1,6 +1,7 @@
 //-------------------------------------------REQUIRES-----------------------------------------------------------
 const { static } = require('express');
 const express = require ('express');
+const clientRouter = require('./routes/clientRouter')
 
 const mysql = require ('mysql2/promise');
 //-----------------------------------------REQUIRES-------------------------------------------------------------
@@ -28,6 +29,8 @@ app.use(function(req, res, next) { //para evitar el error CORS
     // res.header("Access-Control-Allow-Methods", "GET, POST");
     next();
 });
+
+app.use('/', clientRouter);
 //-------------------------------------------LISTENER--------------------------------------------------
 app.listen(PORT, () => console.log(`Servidor Levantado en el Puerto ${PORT}`));
 //----------------------------------------LISTENER-----------------------------------------------------
