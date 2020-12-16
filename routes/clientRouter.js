@@ -1,7 +1,7 @@
 //------------------------------------------REQUIRES------------------------------------------------------------
 
 const router = require('express').Router();
-const controller = require('./clientController');
+const controller = require('../controllers/clientController');
 module.exports = router;
 
 //-------------------------------------------REQUIRES-----------------------------------------------------------
