@@ -36,7 +36,7 @@ app.use('/', clientRouter);
 
 app.use('/', clinicRouter);
 
-app.use('/', appointmentRouter)
+app.use('/', appointmentRouter);
 
 app.get('/', (req, res) => {res.send('Prueba Realizada!')})
 //--------------------------------------------ENRUTAMINETO-------------------------------------------------------
@@ -44,4 +44,3 @@ app.get('/', (req, res) => {res.send('Prueba Realizada!')})
 //-------------------------------------------LISTENER------------------------------------------------------------
 app.listen(PORT, () => console.log(`Servidor Levantado en el Puerto ${PORT}`));
 //----------------------------------------LISTENER---------------------------------------------------------------
-
