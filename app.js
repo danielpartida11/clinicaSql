@@ -1,7 +1,10 @@
 //-------------------------------------------REQUIRES-----------------------------------------------------------
 const { static } = require('express');
 const express = require ('express');
-const clientRouter = require('./routes/clientRouter')
+
+const clientRouter = require('./routes/clientRouter');
+const clinicRouter = require('./routes/clinicRouter');
+const appointmentRouter = require('./routes/appointmentRouter')
 
 const mysql = require ('mysql2/promise');
 //-----------------------------------------REQUIRES-------------------------------------------------------------
