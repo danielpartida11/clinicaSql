@@ -31,6 +31,8 @@ app.use(function(req, res, next) { //para evitar el error CORS
 });
 
 app.use('/', clientRouter);
+
+app.get('/', (req, res) => {res.send('Me ha secuestrado un niño rata de 10 años')})
 //-------------------------------------------LISTENER--------------------------------------------------
 app.listen(PORT, () => console.log(`Servidor Levantado en el Puerto ${PORT}`));
 //----------------------------------------LISTENER-----------------------------------------------------
