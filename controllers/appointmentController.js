@@ -1,5 +1,5 @@
 //-----------------------------------------GET------------------------------------------------------------------
-module.exports.appointment = async(req, res) =>{
+module.exports.getAppointment = async(req, res) =>{
 
     const appointments = await appointment.find();
     res.json(appointments);

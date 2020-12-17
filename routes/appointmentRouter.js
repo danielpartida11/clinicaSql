@@ -1,7 +1,7 @@
 //------------------------------------------REQUIRES------------------------------------------------------------
 
 const router = require('express').Router();
-const controller = require('./appointmentController');
+const controller = require('../controllers/appointmentController');
 module.exports = router;
 
 //-------------------------------------------REQUIRES-----------------------------------------------------------

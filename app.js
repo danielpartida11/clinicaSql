@@ -21,6 +21,8 @@ const connect = mysql.createConnection({
     password: '1234'
 })
 //-----------------------------------------CONEXION CON LA BBDD-------------------------------------------------
+
+//--------------------------------------------ENRUTAMINETO------------------------------------------------------
 app.use(express.json());
 
 app.use(function(req, res, next) { //para evitar el error CORS
@@ -32,8 +34,14 @@ app.use(function(req, res, next) { //para evitar el error CORS
 
 app.use('/', clientRouter);
 
-app.get('/', (req, res) => {res.send('Me ha secuestrado un niño rata de 10 años')})
-//-------------------------------------------LISTENER--------------------------------------------------
+app.use('/', clinicRouter);
+
+app.use('/', appointmentRouter)
+
+app.get('/', (req, res) => {res.send('Prueba Realizada!')})
+//--------------------------------------------ENRUTAMINETO-------------------------------------------------------
+
+//-------------------------------------------LISTENER------------------------------------------------------------
 app.listen(PORT, () => console.log(`Servidor Levantado en el Puerto ${PORT}`));
-//----------------------------------------LISTENER-----------------------------------------------------
+//----------------------------------------LISTENER---------------------------------------------------------------
 

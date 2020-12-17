@@ -1,5 +1,5 @@
 //-----------------------------------------GET------------------------------------------------------------------
-module.exports.clinic = async(req, res) =>{
+module.exports.getClinic = async(req, res) =>{
 
     const clinics = await clinic.find();
     res.json(clinics);
