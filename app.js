@@ -21,7 +21,7 @@ const connect = mysql.createConnection({
     host: '127.0.0.1',
     user: 'root',
     database: 'clinicaSql',
-    password: '1234'
+    password: ''
 })
 //-----------------------------------------CONEXION CON LA BBDD-------------------------------------------------
 
