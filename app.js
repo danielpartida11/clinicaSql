@@ -31,7 +31,7 @@ app.use(express.json());
 app.use(function(req, res, next) { //para evitar el error CORS
     res.header("Access-Control-Allow-Origin", "*"); //permite hacer peticiones desde todos los orígenes
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept"); //permite peticiones con las cabeceras enumeradas
-    // res.header("Access-Control-Allow-Methods", "GET, POST");
+    res.header("Access-Control-Allow-Methods", "GET, POST");
     next();
 });
 
